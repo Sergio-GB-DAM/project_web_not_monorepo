@@ -24,4 +24,6 @@ Una vez descargardo el proyecto nos debemos situar en la raíz del mismo desde l
 Una vez instalado podremos ejecutar el comando `npn run dev` o `mnpm dev` desde la raíz y nos debería de abrir el navegador con la previsualización de la página web.
 
 
+
+
 ### *ESTA VERSIÓN DEL PROYECTO NO ES LA MÁS AVANZADA, LA VERSIÓN CON TODAS LAS FUNCIONALIDADES LA TIENE EL MONOREPO*
