@@ -1,0 +1,174 @@
+[
+    {
+        "id": 10,
+        "name": "Pizza Roma",
+        "location": "Calle Italia 12",
+        "image": null,
+        "createdDate": "2026-01-21T08:21:58.874Z",
+        "ownersIds": [
+            3
+        ],
+        "productsIds": [
+            68,
+            69,
+            70,
+            77
+        ],
+        "ordersIds": []
+    },
+    {
+        "id": 11,
+        "name": "Burger House",
+        "location": "Avenida Central 45",
+        "image": null,
+        "createdDate": "2026-01-21T08:21:58.874Z",
+        "ownersIds": [
+            4,
+            7
+        ],
+        "productsIds": [
+            58,
+            71,
+            72,
+            73
+        ],
+        "ordersIds": [
+            17
+        ]
+    },
+    {
+        "id": 12,
+        "name": "Bar El Rincón",
+        "location": "Plaza Mayor 3",
+        "image": null,
+        "createdDate": "2026-01-18T11:10:22.120Z",
+        "ownersIds": [
+            5
+        ],
+        "productsIds": [
+            74,
+            75
+        ],
+        "ordersIds": [
+            18,
+            19
+        ]
+    },
+    {
+        "id": 13,
+        "name": "Green Garden",
+        "location": "Calle Verde 22",
+        "image": null,
+        "createdDate": "2026-01-15T09:45:10.500Z",
+        "ownersIds": [
+            6
+        ],
+        "productsIds": [
+            76,
+            77
+        ],
+        "ordersIds": []
+    },
+    {
+        "id": 14,
+        "name": "Trattoria Milano",
+        "location": "Calle Lombardia 8",
+        "image": null,
+        "createdDate": "2026-01-10T14:32:55.230Z",
+        "ownersIds": [
+            8,
+            9
+        ],
+        "productsIds": [
+            78,
+            79
+        ],
+        "ordersIds": [
+            20
+        ]
+    },
+    {
+        "id": 15,
+        "name": "Mar y Tierra",
+        "location": "Paseo del Puerto 5",
+        "image": null,
+        "createdDate": "2026-01-12T16:20:40.000Z",
+        "ownersIds": [
+            10
+        ],
+        "productsIds": [
+            80,
+            81
+        ],
+        "ordersIds": [
+            21,
+            22
+        ]
+    },
+    {
+        "id": 16,
+        "name": "La Mesa Gourmet",
+        "location": "Calle Gourmet 14",
+        "image": null,
+        "createdDate": "2026-01-08T13:05:12.999Z",
+        "ownersIds": [
+            11,
+            12
+        ],
+        "productsIds": [
+            82,
+            83
+        ],
+        "ordersIds": []
+    },
+    {
+        "id": 17,
+        "name": "Steak & Wine",
+        "location": "Avenida del Chef 30",
+        "image": null,
+        "createdDate": "2026-01-05T19:50:00.000Z",
+        "ownersIds": [
+            13
+        ],
+        "productsIds": [
+            84,
+            88
+        ],
+        "ordersIds": [
+            23
+        ]
+    },
+    {
+        "id": 18,
+        "name": "Costa Azul",
+        "location": "Calle del Mar 9",
+        "image": null,
+        "createdDate": "2026-01-03T12:00:00.000Z",
+        "ownersIds": [
+            14,
+            15
+        ],
+        "productsIds": [
+            85,
+            86
+        ],
+        "ordersIds": []
+    },
+    {
+        "id": 19,
+        "name": "Café Central",
+        "location": "Gran Vía 101",
+        "image": null,
+        "createdDate": "2026-01-01T10:15:30.000Z",
+        "ownersIds": [
+            16
+        ],
+        "productsIds": [
+            87
+        ],
+        "ordersIds": [
+            24,
+            25
+        ]
+    }
+]

@@ -1,0 +1,199 @@
+[
+    {
+        "id": 58,
+        "name": "Mayonesa",
+        "price": 0.5,
+        "image": null,
+        "restaurantId": 11,
+        "dtype": "ComplementDAO"
+    },
+    {
+        "id": 68,
+        "name": "Agua",
+        "price": 0.75,
+        "image": null,
+        "restaurantId": 10,
+        "dtype": "DrinkDAO",
+        "attributes": {
+            "brand": "Font Vella"
+        }
+    },
+    {
+        "id": 69,
+        "name": "Macarrones a la boloñesa",
+        "price": 13.0,
+        "image": null,
+        "restaurantId": 10,
+        "dtype": "DishDAO"
+    },
+    {
+        "id": 70,
+        "name": "Coca-Cola",
+        "price": 2.2,
+        "image": null,
+        "restaurantId": 10,
+        "dtype": "DrinkDAO",
+        "attributes": {
+            "brand": "Coca-Cola"
+        }
+    },
+    {
+        "id": 71,
+        "name": "Patatas fritas",
+        "price": 3.5,
+        "image": null,
+        "restaurantId": 11,
+        "dtype": "DishDAO"
+    },
+    {
+        "id": 72,
+        "name": "Ketchup",
+        "price": 0.4,
+        "image": null,
+        "restaurantId": 11,
+        "dtype": "ComplementDAO"
+    },
+    {
+        "id": 73,
+        "name": "Hamburguesa clásica",
+        "price": 9.5,
+        "image": null,
+        "restaurantId": 11,
+        "dtype": "DishDAO"
+    },
+    {
+        "id": 74,
+        "name": "Cerveza",
+        "price": 2.5,
+        "image": null,
+        "restaurantId": 12,
+        "dtype": "DrinkDAO",
+        "attributes": {
+            "brand": "Mahou"
+        }
+    },
+    {
+        "id": 75,
+        "name": "Pan extra",
+        "price": 0.8,
+        "image": null,
+        "restaurantId": 12,
+        "dtype": "ComplementDAO"
+    },
+    {
+        "id": 76,
+        "name": "Ensalada mixta",
+        "price": 7.0,
+        "image": null,
+        "restaurantId": 13,
+        "dtype": "DishDAO"
+    },
+    {
+        "id": 77,
+        "name": "Fanta Naranja",
+        "price": 2.1,
+        "image": null,
+        "restaurantId": 13,
+        "dtype": "DrinkDAO",
+        "attributes": {
+            "brand": "Fanta"
+        }
+    },
+    {
+        "id": 78,
+        "name": "Risotto de setas",
+        "price": 16.5,
+        "image": null,
+        "restaurantId": 14,
+        "dtype": "DishDAO"
+    },
+    {
+        "id": 79,
+        "name": "Entrecot de ternera",
+        "price": 24.0,
+        "image": null,
+        "restaurantId": 14,
+        "dtype": "DishDAO"
+    },
+    {
+        "id": 80,
+        "name": "Salmón a la plancha",
+        "price": 21.5,
+        "image": null,
+        "restaurantId": 15,
+        "dtype": "DishDAO"
+    },
+    {
+        "id": 81,
+        "name": "Vino tinto crianza",
+        "price": 18.0,
+        "image": null,
+        "restaurantId": 15,
+        "dtype": "DrinkDAO",
+        "attributes": {
+            "brand": "Marqués de Cáceres"
+        }
+    },
+    {
+        "id": 82,
+        "name": "Tabla de quesos gourmet",
+        "price": 19.5,
+        "image": null,
+        "restaurantId": 16,
+        "dtype": "DishDAO"
+    },
+    {
+        "id": 83,
+        "name": "Foie micuit",
+        "price": 28.0,
+        "image": null,
+        "restaurantId": 16,
+        "dtype": "DishDAO"
+    },
+    {
+        "id": 84,
+        "name": "Solomillo de ternera premium",
+        "price": 34.0,
+        "image": null,
+        "restaurantId": 17,
+        "dtype": "DishDAO"
+    },
+    {
+        "id": 85,
+        "name": "Lubina al horno",
+        "price": 31.5,
+        "image": null,
+        "restaurantId": 18,
+        "dtype": "DishDAO"
+    },
+    {
+        "id": 86,
+        "name": "Vino blanco reserva",
+        "price": 27.0,
+        "image": null,
+        "restaurantId": 18,
+        "dtype": "DrinkDAO",
+        "attributes": {
+            "brand": "Albariño Pazo de Señorans"
+        }
+    },
+    {
+        "id": 87,
+        "name": "Café especialidad",
+        "price": 3.2,
+        "image": null,
+        "restaurantId": 19,
+        "dtype": "DrinkDAO",
+        "attributes": {
+            "brand": "Illy"
+        }
+    },
+    {
+        "id": 88,
+        "name": "Trufa negra rallada",
+        "price": 6.0,
+        "image": null,
+        "restaurantId": 17,
+        "dtype": "ComplementDAO"
+    }
+]

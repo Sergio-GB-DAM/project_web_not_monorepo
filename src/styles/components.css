@@ -1,0 +1,204 @@
+/* CABECERA */
+#wholeHeader {
+  height: 150px;
+  background: linear-gradient(180deg, #0f1115 0%, #121520 100%);
+  border-bottom: 1px solid var(--border-soft);
+}
+
+#webName {
+  font-weight: 700;
+  color: var(--text-primary);
+  letter-spacing: 1px;
+  color: white;
+  text-align: center;
+  margin-top: 20px;
+}
+
+
+/* NAVEGACIÓN */
+.nav-link {
+  color: var(--text-secondary);
+  border-radius: 999px;
+  padding: 6px 16px;
+  transition: all 0.2s ease;
+}
+
+.nav-link:hover {
+  color: var(--text-primary);
+  background-color: var(--bg-surface-2);
+}
+
+.nav-pills .nav-link.active {
+  background-color: var(--accent);
+  color: white;
+}
+
+/* LOGIN - SIGNUP */
+.btn-primary {
+  background-color: var(--accent);
+  border: none;
+  transition: all 0.2s ease;
+}
+
+.btn-primary:hover {
+  background-color: var(--accent-hover);
+}
+
+/* CARGA */
+.loader-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+
+
+
+/* CARDS */
+.card {
+  background-color: var(--bg-surface);
+  color: var(--text-primary);
+  border: 1px solid var(--border-soft);
+  border-radius: var(--radius-lg);
+}
+
+.product-card, .restaurant-card {
+  background-color: var(--bg-surface);
+  transition: all 0.25s ease;
+}
+
+.product-card:hover, .restaurant-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-soft);
+}
+
+.product-img, .restaurant-img {
+  height: 180px;
+  object-fit: contain;
+  background-color: var(--bg-surface-2);
+  padding: 12px;
+  border-radius: 12px;
+}
+
+.img-fluid {
+  height: 300px;
+}
+
+.delete-btn {
+  opacity: 0;
+  transform: scale(0.7);
+  transition: all 0.2s ease;
+  background-color: var(--danger);
+  border: none;
+}
+
+.btn-outline-primary {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+.btn-outline-primary:hover {
+  background-color: var(--accent);
+  color: white;
+}
+
+.product-card:hover .delete-btn,
+.restaurant-card:hover .delete-btn {
+  opacity: 1;
+  transform: scale(1);
+}
+
+
+/* FILTROS */
+#filters {
+  background-color: var(--bg-surface);
+  color: var(--text-primary);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border-soft);
+}
+
+.form-control::placeholder {
+  color: var(--text-secondary);
+  opacity: 1;
+}
+
+.form-check-input:checked {
+  background-color: var(--accent);
+  border-color: var(--accent);
+}
+
+
+/* FLOATING BUTTON - MENU */
+.floating-container {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+}
+
+.floating-btn {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  color: white;
+  font-size: 32px;
+  border: none;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+  transition: all 0.2s ease;
+  background: var(--accent);
+}
+
+.floating-btn:hover {
+  background: var(--accent-hover);
+  transform: scale(1.10);
+}
+
+.floating-menu {
+  position: absolute;
+  bottom: 70px;
+  right: 0;
+  border-radius: 12px;
+  padding: 8px 0;
+  min-width: 180px;
+  overflow: hidden;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-soft);
+}
+
+.floating-menu .dropdown-item {
+  padding: 10px 16px;
+  display: block;
+  text-decoration: none;
+  font-size: 15px;
+  color: var(--text-primary);
+}
+
+.floating-menu .dropdown-item:hover {
+  background: var(--bg-surface-2);
+}
+
+/* NOT FOUND LABELS */
+.no-restaurants, .no-products {
+  height: calc(100vh - 70px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: var(--text-secondary);
+}
+
+
+
+/* FOOTER */
+.footer {
+  height: 100px;
+  background: linear-gradient(180deg, #121520 0%, #0f1115 100%);
+  border-top: 1px solid var(--border-soft);
+  margin-top: 5em;
+  color: var(--text-secondary);
+}

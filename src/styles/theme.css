@@ -1,0 +1,20 @@
+:root {
+  --bg-main: #0f1115;
+  --bg-surface: #161a22;
+  --bg-surface-2: #1e2330;
+
+  --text-primary: #f5f7fa;
+  --text-secondary: #a9b0c2;
+
+  --accent: #7c5cff;
+  --accent-hover: #6a4be0;
+
+  --danger: #ff4d4d;
+  --success: #3ddc97;
+
+  --border-soft: rgba(255,255,255,0.08);
+  --shadow-soft: 0 10px 30px rgba(0,0,0,0.4);
+
+  --radius-lg: 18px;
+  --radius-md: 12px;
+}
