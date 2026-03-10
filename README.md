@@ -1,16 +1,24 @@
-# React + Vite
+# PROYECTO - SGB
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Función del proyecto
 
-Currently, two official plugins are available:
+Página web que se conecta con una API REST de restaurantes y permite a los usuarios ver los prodcutos subidos por los restaurantes así como realizar pedidos en los mismos.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## React Compiler
+## Funcionamiento interno
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+El proyecto dispone de una sección de servicios encargada de realizar peticiones a la API REST de restaurantes y varios hooks que nos permiten hacer uso de los servicios. Gracias a estos somos capaces de recoger la información y la plasmamos en la página web gracias a los componentes que hemos creado.
 
-## Expanding the ESLint configuration
+Podremos realizar operaciones básicas sobre los productos y restaurantes (Podemos verlos en las páginas principales y pedir informació adicional) así como añadir productos al pedido aunque esta función no esté implementada al completo.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+## Tecnologías utilizadas
+
+Para este proyecto se usa React para la parte web y una API REST con springboot que nos permite acceder a una base de datos PostgreSQL.
+
+
+## Cómo usar el proyecto
+
+Una vez descargardo el proyecto nos debemos situar en la raíz del mismo desde la terminal de comandos y ejecutar el comando "mnpm install". En caso de no disponer de mnpn, debemos instalarlo.
+
+Una vez instalado podremos ejecutar el comando "npn run dev" o "mnpm dev" desde la raíz y nos debería de abrir el navegador con la previsualización de la página web.
