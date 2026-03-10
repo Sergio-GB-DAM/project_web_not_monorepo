@@ -19,6 +19,6 @@ Para este proyecto se usa React para la parte web y una API REST con springboot 
 
 ## Cómo usar el proyecto
 
-Una vez descargardo el proyecto nos debemos situar en la raíz del mismo desde la terminal de comandos y ejecutar el comando "mnpm install". En caso de no disponer de mnpn, debemos instalarlo.
+Una vez descargardo el proyecto nos debemos situar en la raíz del mismo desde la terminal de comandos y ejecutar el comando `mnpm install`. En caso de no disponer de mnpn, debemos instalarlo.
 
-Una vez instalado podremos ejecutar el comando "npn run dev" o "mnpm dev" desde la raíz y nos debería de abrir el navegador con la previsualización de la página web.
+Una vez instalado podremos ejecutar el comando `npn run dev` o `mnpm dev` desde la raíz y nos debería de abrir el navegador con la previsualización de la página web.
