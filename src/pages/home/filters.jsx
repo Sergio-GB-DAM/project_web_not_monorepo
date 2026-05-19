@@ -6,9 +6,9 @@ const Filters = ({ filters, handleFilterChange }) => {
   ];
 
   const productTypes = [
-    { id: "DishDAO", label: "Platos" },
-    { id: "DrinkDAO", label: "Bebidas" },
-    { id: "ComplementDAO", label: "Complementos" }
+    { id: "dish", label: "Platos" },
+    { id: "drink", label: "Bebidas" },
+    { id: "complement", label: "Complementos" }
   ];
 
   return (

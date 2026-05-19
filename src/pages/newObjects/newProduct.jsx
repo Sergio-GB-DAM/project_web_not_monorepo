@@ -11,11 +11,13 @@ const NewProduct = () => {
 
     const [product, setProduct] = useState({
         name: "",
-        image: "",
         price: "",
         dtype: "dish",
-        attributes: {},
-        restaurantId: 10
+        description: "",
+        restaurantId: 10,
+        attributes: {
+            brand: ""
+        }
     });
 
 
@@ -46,11 +48,11 @@ const NewProduct = () => {
 
     // Cambio en los atributos dinámicos
     const handleAttributeChange = (e) => {
-        setProduct({
-            ...product,
-            attributes: { ...product.attributes, [e.target.name]: e.target.value },
-        });
-    };
+    setProduct({
+        ...product,
+        attributes: { ...product.attributes, [e.target.name]: e.target.value }
+    });
+};
 
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -98,15 +100,18 @@ const NewProduct = () => {
                     />
                 </div>
 
-                {/* Imagen */}
-                <div className="mb-3">
-                    <label className="form-label">Imagen</label>
-                    <input type="file"
-                    accept="image/*"
-                    className="form-control bg-dark text-white border-0"
-                    onChange={handleImage} />
 
-                    {preview && <img src={preview} alt="Preview" className="mt-2" style={{maxWidth: "600px", maxHeight: "300px"}} />}
+                {/* Descripción */}
+                <div className="col-md-6">
+                    <label className="form-label">Descripción</label>
+                    <input
+                        type="text"
+                        className="form-control bg-dark text-white border-0"
+                        name="description"
+                        value={product.description}
+                        onChange={handleChange}
+                        required
+                    />
                 </div>
 
                 {/* Tipo */}
@@ -132,11 +137,22 @@ const NewProduct = () => {
                             type="text"
                             className="form-control bg-dark text-white border-0"
                             name="brand"
-                            value={product.attributes.brand}
+                            value={product.attributes.brand || ""}
                             onChange={handleAttributeChange}
                         />
                     </div>
                 )}
+
+                {/* Imagen */}
+                <div className="mb-3">
+                    <label className="form-label">Imagen</label>
+                    <input type="file"
+                    accept="image/*"
+                    className="form-control bg-dark text-white border-0"
+                    onChange={handleImage} />
+
+                    {preview && <img src={preview} alt="Preview" className="mt-2" style={{maxWidth: "600px", maxHeight: "300px"}} />}
+                </div>
 
                 {/* Botones */}
                 <div className="col-12 d-flex gap-2 mt-3">

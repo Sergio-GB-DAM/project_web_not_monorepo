@@ -11,8 +11,11 @@ const newRestaurant = () => {
 
     const [restaurant, setRestaurant] = useState({
         name: "",
-        image: "",
-        location: ""
+        location: "",
+        description: "",
+        phoneNumber: "",
+        email: "",
+        accountId: localStorage.getItem("userId") || 1
     });
 
 
@@ -81,6 +84,45 @@ const newRestaurant = () => {
                             id="location"
                             name="location"
                             value={restaurant.location}
+                            onChange={handleChange}
+                            required
+                        />
+                    </div>
+
+                    <div className="mb-3">
+                        <label htmlFor="description" className="form-label">Descripción</label>
+                        <input
+                            type="text"
+                            className="form-control bg-dark text-white border-0"
+                            id="description"
+                            name="description"
+                            value={restaurant.description}
+                            onChange={handleChange}
+                            required
+                        />
+                    </div>
+
+                    <div className="mb-3">
+                        <label htmlFor="phoneNumber" className="form-label">Número de teléfono</label>
+                        <input
+                            type="text"
+                            className="form-control bg-dark text-white border-0"
+                            id="phoneNumber"
+                            name="phoneNumber"
+                            value={restaurant.phoneNumber}
+                            onChange={handleChange}
+                            required
+                        />
+                    </div>
+
+                    <div className="mb-3">
+                        <label htmlFor="email" className="form-label">Correo electrónico</label>
+                        <input
+                            type="email"
+                            className="form-control bg-dark text-white border-0"
+                            id="email"
+                            name="email"
+                            value={restaurant.email}
                             onChange={handleChange}
                             required
                         />

@@ -8,10 +8,11 @@ export const login = async (credentials) => {
 
     if (!res.ok) throw new Error("Credenciales incorrectas");
 
-    const token = await res.text();
-    localStorage.setItem("token", token);
+    const user = await res.json();
+    localStorage.setItem("token", user.token);
+    localStorage.setItem("userId", user.userId);
 
-    return token;
+    return user.token;
 };
 
 // Para crear una cuenta

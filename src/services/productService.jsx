@@ -38,9 +38,12 @@ export const createProduct = async (product, file, token) => {
     const formData = new FormData();
 
     formData.append("name", product.name);
-    formData.append("price", product.price);
+    formData.append("price", Number(product.price));
     formData.append("dtype", product.dtype);
     formData.append("attributes", JSON.stringify(product.attributes || {}));
+    formData.append("description", product.description);
+    formData.append("restaurantId", Number(product.restaurantId));
+    formData.append("allergenIds", JSON.stringify([]));
     if (file) formData.append("image", file);
 
     const res = await fetch("http://localhost:8080/project/product", {
@@ -51,10 +54,15 @@ export const createProduct = async (product, file, token) => {
         body: formData
     });
 
-    if (!res.ok) throw {
-        status: res.status,
-        message: "Error al crear el producto"
-    };
+    if (!res.ok) {
+        const text = await res.text();
+        console.error("ERROR BACKEND:", text);
+
+        throw {
+            status: res.status,
+            message: text
+        };
+    }
 
     return res.json();
 };

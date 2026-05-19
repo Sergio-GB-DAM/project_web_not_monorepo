@@ -39,6 +39,11 @@ export const createRestaurant = async (restaurant, file, token) => {
 
     formData.append("name", restaurant.name);
     formData.append("location", restaurant.location);
+    formData.append("description", restaurant.description);
+    formData.append("phoneNumber", restaurant.phoneNumber);
+    formData.append("email", restaurant.email);
+    formData.append("accountId", restaurant.accountId);
+
     if (file) formData.append("image", file);
 
     const res = await fetch("http://localhost:8080/project/restaurant", {
@@ -46,14 +51,13 @@ export const createRestaurant = async (restaurant, file, token) => {
         headers: {
             "Authorization": `Bearer ${token}`
         },
-
         body: formData
     });
 
-    if (!res.ok) throw {
-        status: res.status,
-        message: "Error al crear el restaurante"
-    };
+    if (!res.ok) {
+        const text = await res.text();
+        throw new Error(text);
+    }
 
     return res.json();
 };

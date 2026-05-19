@@ -35,17 +35,23 @@ const ProductInfo = () => {
                         <h4 className="text-success mb-3">{product.price.toFixed(2)} €</h4>
 
                         <span className="badge bg-secondary mb-3">
-                            {product.dtype == "DishDAO" ? "🍽️ Plato" :
-                                product.dtype == "DrinkDAO" ? "🥤 Bebida":
+                            {product.dtype == "dish" ? "🍽️ Plato" :
+                                product.dtype == "drink" ? "🥤 Bebida":
                                 "🥖 Complemento"}
                         </span>
+
+                        {product.description && (
+                            <p className="mb-3">
+                                {product.description}
+                            </p>
+                        )}
                         
 
-                        {product.attributes && Object.entries(product.attributes).map(([key, value]) => (
-                            <p key={key} className="mt-3">
-                                {key == "brand" ? "Marca" : key}: {value}
+                        {product.brand && (
+                            <p className="mt-3">
+                                {product.brand}
                             </p>
-                        ))}
+                        )}
 
                         <div className="mt-4 d-flex gap-2">
                             <Link to="/" className="btn btn-outline-primary">← Volver</Link>
