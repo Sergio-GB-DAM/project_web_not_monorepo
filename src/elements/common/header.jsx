@@ -7,7 +7,7 @@ const Header = () => {
 
     return (
         <div id="wholeHeader">
-            <Title titleId="webName" label="webName" />
+            <Title titleId="webName" label="Forkly" />
 
             {!location.pathname.startsWith("/product/") && !location.pathname.startsWith("/restaurant/") && (
 
